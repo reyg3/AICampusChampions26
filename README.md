@@ -4,7 +4,7 @@
 
 This README summarizes the coursework in the [UA AI Campus Champions](https://github.com/UA-AI2S/AI-Champions/wiki) program run by the Arizona Institute for Artificial Intelligence (AI2S) and the Office of Responsible AI (ORAI). It is a personal study reference — the original course materials, tasks, and rubrics live in the [program wiki](https://github.com/UA-AI2S/AI-Champions/wiki).
 
-![6-Week AI Leadership Roadmap](https://raw.githubusercontent.com/UA-AI2S/AI-Champions/main/images/6-Week_AI_Leadership_Roadmap.png)
+![6-Week AI Leadership Roadmap](images/6-Week_AI_Leadership_Roadmap.png)
 
 ---
 
@@ -105,7 +105,7 @@ The six modules are sequenced along the cognitive dimension, moving from lower-o
 
 **What is AI and why does it matter now?** The opening module builds a shared, accurate vocabulary for AI and situates the current moment within the field's history — from symbolic AI through the Transformer architecture to foundation models.
 
-![AI Foundations — Student Revision Guide](https://raw.githubusercontent.com/UA-AI2S/AI-Champions/main/images/AI_Foundations_Student_Revision_Guide.png)
+![AI Foundations — Student Revision Guide](images/AI_Foundations_Student_Revision_Guide.png)
 
 ### Learning objectives
 
@@ -141,7 +141,7 @@ LLMs are trained to predict the next token in a sequence given the prior context
 <details>
 <summary><b>Course content graphic (NotebookLM infographic)</b></summary>
 
-![Foundation Model Paradigm Shift Notes](https://raw.githubusercontent.com/UA-AI2S/AI-Champions/main/images/Foundation_Model_Paradigm_Shift_Notes.png)
+![Foundation Model Paradigm Shift Notes](images/Foundation_Model_Paradigm_Shift_Notes.png)
 </details>
 
 This Stanford report is the first systematic academic treatment of the "foundation model" paradigm, coining the term itself. It argues that a new class of models — trained on broad data at scale and adaptable to many tasks — has become the organizing reality of modern AI. The authors define the paradigm around two intertwined properties, **emergence** (capabilities arising unpredictably with scale) and **homogenization** (the same model underpinning diverse applications), and argue these make foundation models simultaneously powerful and hazardous: gains and defects both propagate widely. The paper surveys capabilities (language, vision, robotics, reasoning) and the full sweep of societal stakes — inequity, misuse, economic and environmental costs, and the concentration of power among the few organizations able to train such models. Its enduring contribution is giving practitioners precise vocabulary — *foundation model, emergence, homogenization, in-context learning* — that distinguishes rigorous discussion from popular-press hand-waving. *Why it mattered for the course:* it supplies the conceptual substrate every later module builds on.
@@ -153,7 +153,7 @@ This Stanford report is the first systematic academic treatment of the "foundati
 <details>
 <summary><b>Course content graphic (NotebookLM infographic)</b></summary>
 
-![2026 Global AI Report Summary](https://raw.githubusercontent.com/UA-AI2S/AI-Champions/main/images/2026_Global_AI_Report_Summary.png)
+![2026 Global AI Report Summary](images/2026_Global_AI_Report_Summary.png)
 </details>
 
 The AI Index is the most comprehensive annual empirical benchmark of AI's state — spanning technical performance, economics, education, policy, and responsible-AI incidents. The 2025 Executive Summary documents rapidly narrowing gaps between models (including open-weight vs. closed, and US vs. international systems), sharp performance gains on hard reasoning benchmarks, falling inference costs, and accelerating adoption of generative AI among knowledge workers. Crucially, it reports *both* progress and caution — safety incidents, evaluation gaps, and uneven benefits — which is why the course insists on reading it critically rather than dismissing it as advocacy. The education and economy chapters ground abstract trends in the participants' own institutional context: how students and faculty are actually using AI, and where measurable productivity effects appear. The module even points to the newer [2026 edition](https://hai.stanford.edu/assets/files/ai_index_report_2026.pdf) to illustrate how quickly the landscape shifts year to year. *Why it mattered for the course:* it turns opinion about "AI's impact" into citable evidence.
@@ -164,7 +164,7 @@ The AI Index is the most comprehensive annual empirical benchmark of AI's state 
 
 **Capabilities, limitations, and prompting.** Module 2 moves from *what AI is* to *how to work with it*: comparing tools systematically, engineering prompts deliberately, and auditing outputs for the failure mode that most affects professional use — hallucination.
 
-![Generative AI — Capabilities and Prompting](https://raw.githubusercontent.com/UA-AI2S/AI-Champions/main/images/Generative_AI_Capabilities_and_Prompting.png)
+![Generative AI — Capabilities and Prompting](images/Generative_AI_Capabilities_and_Prompting.png)
 
 ### Learning objectives
 
@@ -200,7 +200,7 @@ RAG grounds an LLM's output by retrieving relevant documents from an external kn
 <details>
 <summary><b>Course content graphic (NotebookLM infographic)</b></summary>
 
-![Guide to Chain-of-Thought Prompting](https://raw.githubusercontent.com/UA-AI2S/AI-Champions/main/images/Guide_to_Chain-of-Thought_Prompting.png)
+![Guide to Chain-of-Thought Prompting](images/Guide_to_Chain-of-Thought_Prompting.png)
 </details>
 
 This Google Research paper introduced chain-of-thought prompting and showed that simply prompting a large model to "think step by step" — by including a few exemplars that spell out intermediate reasoning — dramatically improves performance on arithmetic, commonsense, and symbolic reasoning tasks. The headline finding is that this reasoning ability is *emergent*: it barely helps small models but produces large gains once models pass roughly 100B parameters, so scale and technique interact. The authors demonstrate state-of-the-art results on benchmarks like GSM8K math word problems using only prompting — no fine-tuning or task-specific training. The paper's importance for the course is conceptual as much as practical: it reframes prompting from a formatting trick into a way of eliciting latent capabilities, and it explains *why* the CoT technique participants apply in the prompt-engineering lab actually works. *Why it mattered for the course:* it is the empirical foundation for deliberate, structured prompting.
@@ -212,7 +212,7 @@ This Google Research paper introduced chain-of-thought prompting and showed that
 <details>
 <summary><b>Course content graphic (NotebookLM infographic)</b></summary>
 
-![Guide to Large Model Hallucinations](https://raw.githubusercontent.com/UA-AI2S/AI-Champions/main/images/Guide_to_Large_Model_Hallucinations.png)
+![Guide to Large Model Hallucinations](images/Guide_to_Large_Model_Hallucinations.png)
 </details>
 
 This ACM Computing Surveys paper is the definitive academic taxonomy of hallucination in natural language generation. It defines hallucination as generated content that is unfaithful to or unsupported by the source input, and separates it into **intrinsic** hallucination (output that contradicts the source) and **extrinsic** hallucination (output that cannot be verified against the source — neither supported nor contradicted). The survey traces contributing causes across the whole pipeline — from noisy or biased training data to decoding strategies that favor fluency over faithfulness — and reviews metrics and mitigation methods across tasks like summarization, dialogue, and translation. For AI Champions the value is operational: knowing the *types* of hallucination lets you audit AI outputs systematically rather than impressionistically, checking specifically for fabricated facts, invented citations, and false temporal or relational claims. *Why it mattered for the course:* it converts a vague worry into a repeatable quality-control checklist.
@@ -223,7 +223,7 @@ This ACM Computing Surveys paper is the definitive academic taxonomy of hallucin
 
 **Practical integration in academic work.** Module 3 grounds AI use in evidence: what the best experiments actually show about productivity gains, where AI helps versus hurts, and how to document and disclose AI-assisted work responsibly.
 
-![AI for Productivity — Technology Guide](https://raw.githubusercontent.com/UA-AI2S/AI-Champions/main/images/AI_Productivity_Technology_Guide.png)
+![AI for Productivity — Technology Guide](images/AI_Productivity_Technology_Guide.png)
 
 ### Learning objectives
 
@@ -256,7 +256,7 @@ A well-designed workflow for a recurring task specifies four things: **input cla
 <details>
 <summary><b>Course content graphic (NotebookLM infographic)</b></summary>
 
-![AI Productivity Study Summary Notes](https://raw.githubusercontent.com/UA-AI2S/AI-Champions/main/images/AI_Productivity_Study_Summary_Notes.png)
+![AI Productivity Study Summary Notes](images/AI_Productivity_Study_Summary_Notes.png)
 </details>
 
 This MIT study (published in *Science*) is the highest-quality experimental evidence on AI's effect on professional writing. In a randomized controlled trial, 453 college-educated professionals completed realistic writing tasks; half were given access to ChatGPT. The treated group finished **37% faster** and produced work rated *higher* in quality — and, notably, the gains were largest for initially lower-performing writers, compressing the skill gap between weaker and stronger workers. The experiment also found that time was reallocated from drafting toward idea generation and editing, and that participants who used the tool reported higher job satisfaction and greater interest in using AI again. Because it is a controlled experiment rather than a survey or anecdote, it anchors the module's claims about productivity in causal evidence. *Why it mattered for the course:* it is the empirical benchmark against which participants interpret their own documented workflow experiments.
@@ -268,9 +268,9 @@ This MIT study (published in *Science*) is the highest-quality experimental evid
 <details>
 <summary><b>Course content graphics (NotebookLM infographics)</b></summary>
 
-![Navigating the Jagged AI Frontier](https://raw.githubusercontent.com/UA-AI2S/AI-Champions/main/images/Navigating_the_Jagged_AI_Frontier.png)
+![Navigating the Jagged AI Frontier](images/Navigating_the_Jagged_AI_Frontier.png)
 
-![Guide to Human-AI Co-Creation](https://raw.githubusercontent.com/UA-AI2S/AI-Champions/main/images/Guide_to_Human-AI_Co-Creation.png)
+![Guide to Human-AI Co-Creation](images/Guide_to_Human-AI_Co-Creation.png)
 </details>
 
 This Harvard Business School field experiment, run with 758 Boston Consulting Group consultants, produced the module's central mental model: the **jagged technological frontier**. For tasks *inside* AI's capability frontier, consultants using GPT-4 completed about 12% more tasks, roughly 25% faster, with quality more than 40% higher than the control group — and, as in Noy & Zhang, the boost was largest for lower-performing consultants. But for a carefully designed task *outside* the frontier — one where the AI gave plausible but wrong guidance — AI-assisted consultants were **19 percentage points more likely to reach the wrong answer**, because they deferred to confident but flawed output. The paper also surfaces the *centaur* and *cyborg* patterns of the most effective users. Its lesson is precisely why the frontier is "jagged, not smooth": the boundary is invisible and doesn't track human intuitions about difficulty, so over-reliance is dangerous exactly where it feels safe. *Why it mattered for the course:* it is the most operationally useful framework for deciding *when* to trust AI assistance.
@@ -281,7 +281,7 @@ This Harvard Business School field experiment, run with 758 Boston Consulting Gr
 
 **Bias, fairness, and epistemic limits.** Module 4 develops the analytical muscle to trace AI harms to their sources — in data, design, or deployment — and to engage seriously with the strongest critiques of large language models.
 
-![Critical Thinking About AI — Fairness](https://raw.githubusercontent.com/UA-AI2S/AI-Champions/main/images/Critical_Thinking_About_AI_Fairness.png)
+![Critical Thinking About AI — Fairness](images/Critical_Thinking_About_AI_Fairness.png)
 
 ### Learning objectives
 
@@ -314,7 +314,7 @@ Participants apply a structured fairness framework to a real AI output, asking w
 <details>
 <summary><b>Course content graphic (NotebookLM infographic)</b></summary>
 
-![Intersectional AI Bias Revision Notes](https://raw.githubusercontent.com/UA-AI2S/AI-Champions/main/images/Intersectional_AI_Bias_Revision_Notes.png)
+![Intersectional AI Bias Revision Notes](images/Intersectional_AI_Bias_Revision_Notes.png)
 </details>
 
 *Gender Shades* is the single most cited empirical demonstration of intersectional bias in a commercial AI system. Buolamwini and Gebru built a new, phenotypically balanced benchmark of faces (labeled by Fitzpatrick skin type) and evaluated three commercial gender-classification products from IBM, Microsoft, and Face++. They found accuracy was consistently worst for darker-skinned women and best for lighter-skinned men — an **accuracy gap of up to 34.7 percentage points** between those two groups. The study's power comes from its method: by disaggregating results along intersecting attributes rather than reporting a single overall accuracy, it exposed disparities that aggregate metrics concealed entirely. It walks through the full analytical pipeline the module teaches — measurement design, finding, causal attribution, and remediation — and it had real-world consequences, prompting the vendors to revise their systems. *Why it mattered for the course:* it is the archetype of rigorous, consequential bias analysis.
@@ -326,9 +326,9 @@ Participants apply a structured fairness framework to a real AI output, asking w
 <details>
 <summary><b>Course content graphics (NotebookLM infographics)</b></summary>
 
-![Stochastic Parrots AI Research Critique](https://raw.githubusercontent.com/UA-AI2S/AI-Champions/main/images/Stochastic_Parrots_AI_Research_Critique.png)
+![Stochastic Parrots AI Research Critique](images/Stochastic_Parrots_AI_Research_Critique.png)
 
-![LLM Harms Taxonomy Revision Notes](https://raw.githubusercontent.com/UA-AI2S/AI-Champions/main/images/LLM_Harms_Taxonomy_Revision_Notes.png)
+![LLM Harms Taxonomy Revision Notes](images/LLM_Harms_Taxonomy_Revision_Notes.png)
 </details>
 
 This FAccT paper is the most influential critical analysis of large language models to date. Its central metaphor — the *stochastic parrot* — argues that an LLM is "a system for haphazardly stitching together sequences of linguistic forms… according to probabilistic information about how they combine, but without any reference to meaning." From this the authors build a multi-pronged case against ever-larger models: escalating **environmental and financial costs** that fall hardest on marginalized communities; training data so large it is **undocumented and unauditable**, encoding and amplifying bias; the risk that fluent, human-seeming text is mistaken for genuine understanding and used to mislead; and the opportunity cost of a research agenda fixated on scale. The course asks participants to identify the paper's strongest arguments *and* a well-reasoned counter-argument — practicing exactly the critical engagement (neither uncritical acceptance nor reflexive dismissal) that defines an AI Champion. *Why it mattered for the course:* it models how to hold rigorous, good-faith skepticism about tools you also use. (The paper is famous partly for the controversy around its publication, which itself illustrates the stakes of AI critique inside industry.)
@@ -339,7 +339,7 @@ This FAccT paper is the most influential critical analysis of large language mod
 
 **Policy and responsible use at the university.** Module 5 gives participants the vocabulary and frameworks to evaluate institutional AI policy — and to draft their own — using the two dominant governance instruments.
 
-![AI Governance — Student Revision Notes](https://raw.githubusercontent.com/UA-AI2S/AI-Champions/main/images/AI_Governance_Student_Revision_Notes.png)
+![AI Governance — Student Revision Notes](images/AI_Governance_Student_Revision_Notes.png)
 
 ### Learning objectives
 
@@ -369,7 +369,7 @@ Where NIST is operational and sector-neutral, UNESCO grounds AI governance in **
 <details>
 <summary><b>Course content graphic (NotebookLM infographic)</b></summary>
 
-![AI Risk Management Revision Notes](https://raw.githubusercontent.com/UA-AI2S/AI-Champions/main/images/AI_Risk_Management_Revision_Notes.png)
+![AI Risk Management Revision Notes](images/AI_Risk_Management_Revision_Notes.png)
 </details>
 
 The NIST AI RMF is the primary U.S. federal framework for organizational AI risk management — voluntary, sector-neutral, and explicitly designed to be adaptable to organizations like universities. Its heart is the **Core**, four functions that structure the entire risk lifecycle: **GOVERN** (a cross-cutting culture of risk management, policies, and accountability that runs through everything), **MAP** (understand the context and intended use, and surface the risks and impacts of a given AI system), **MEASURE** (use quantitative and qualitative methods to assess and monitor those risks, including trustworthiness characteristics like validity, safety, fairness, and transparency), and **MANAGE** (prioritize risks and act — allocating resources, responding, and recovering). The framework also defines the characteristics of *trustworthy AI* that these functions serve. For AI Champions its value is diagnostic: the four-function vocabulary lets you read any institutional AI policy and pinpoint what it addresses and what it silently omits. *Why it mattered for the course:* it is the backbone of the module's policy-analysis rubric.
@@ -381,7 +381,7 @@ The NIST AI RMF is the primary U.S. federal framework for organizational AI risk
 <details>
 <summary><b>Course content graphic (NotebookLM infographic)</b></summary>
 
-![UNESCO AI Ethics Revision Notes](https://raw.githubusercontent.com/UA-AI2S/AI-Champions/main/images/UNESCO_AI_Ethics_Revision_Notes.png)
+![UNESCO AI Ethics Revision Notes](images/UNESCO_AI_Ethics_Revision_Notes.png)
 </details>
 
 The UNESCO Recommendation is the first global normative instrument on AI ethics, adopted by all 193 member states in November 2021. Unlike the operational, sector-neutral NIST framework, it grounds AI governance in **human rights and human dignity**, and foregrounds dimensions NIST largely omits: cross-border cooperation, equity between and within nations, environmental and ecosystem impact, and the protection of cultural diversity. It sets out core values (human rights, environmental flourishing, diversity and inclusiveness, peaceful societies) and actionable principles (proportionality and do-no-harm, safety and security, fairness and non-discrimination, sustainability, privacy, human oversight, transparency and explainability, accountability). It also translates these into policy-action areas covering data governance, education, and the environment. Reading it alongside NIST gives participants two complementary lenses — a procedural risk framework and a values-based rights framework — for evaluating and drafting institutional policy. *Why it mattered for the course:* it supplies the ethical and human-rights vocabulary that a purely operational framework cannot.
@@ -392,7 +392,7 @@ The UNESCO Recommendation is the first global normative instrument on AI ethics,
 
 **Design, leadership, and action — the capstone.** The final module synthesizes everything into an original AI adoption initiative: a concrete plan the participant will lead in their own unit, communicated to stakeholders and designed to sustain itself.
 
-![Becoming an AI Campus Champion](https://raw.githubusercontent.com/UA-AI2S/AI-Champions/main/images/Becoming_an_AI_Campus_Champion.png)
+![Becoming an AI Campus Champion](images/Becoming_an_AI_Campus_Champion.png)
 
 ### Learning objectives
 
@@ -422,7 +422,7 @@ The capstone is organized as a seven-section canvas — problem statement, stake
 <details>
 <summary><b>Course content graphic (NotebookLM infographic)</b></summary>
 
-![Communities of Practice Cultivation Principles](https://raw.githubusercontent.com/UA-AI2S/AI-Champions/main/images/Communities_of_Practice_Cultivation_Principles.png)
+![Communities of Practice Cultivation Principles](images/Communities_of_Practice_Cultivation_Principles.png)
 </details>
 
 Wenger, McDermott, and Snyder's book is the foundational management text on **communities of practice** — groups of people who share a concern and deepen their expertise by interacting regularly. The assigned excerpt defines a CoP through its three structural elements: the **domain** (the shared area of interest that gives the community identity and purpose), the **community** (the members, their relationships, and their mutual engagement and trust), and the **practice** (the shared body of knowledge, tools, stories, and methods the community develops over time). The authors argue CoPs are uniquely effective vehicles for transferring tacit knowledge — the kind that resists being written down — which is exactly what spreading responsible AI practice across a campus requires. The companion "seven principles for cultivating communities of practice" (design for evolution, open a dialogue between inside and outside perspectives, invite different levels of participation, and so on) gives participants a practical design toolkit. *Why it mattered for the course:* it is the blueprint for making an AI Champion initiative durable rather than a one-off event.
@@ -434,7 +434,7 @@ Wenger, McDermott, and Snyder's book is the foundational management text on **co
 <details>
 <summary><b>Course content graphic (NotebookLM infographic)</b></summary>
 
-![Mastering the 2D Learning Matrix](https://raw.githubusercontent.com/UA-AI2S/AI-Champions/main/images/Mastering_the_2D_Learning_Matrix.png)
+![Mastering the 2D Learning Matrix](images/Mastering_the_2D_Learning_Matrix.png)
 </details>
 
 Krathwohl's article gives a concise overview of the 2001 revision of Bloom's classic taxonomy of educational objectives. The revision reframes the original single hierarchy into a **two-dimensional matrix**. The *cognitive process* dimension runs from lower to higher order — Remember, Understand, Apply, Analyze, Evaluate, Create (the revision renames the categories as verbs and, notably, moves *Create* above *Evaluate* at the top) — while the *knowledge* dimension distinguishes factual, conceptual, procedural, and **metacognitive** knowledge (the last being new to the revision). Any learning objective can be located in a cell of this grid, which makes objectives, activities, and assessments easier to align. The reading matters here because the whole workshop was *designed* on this spine, marching from Remember (Module 1) to Create (Module 6); understanding the framework lets participants build AI-literacy learning experiences for their own colleagues and articulate the pedagogical logic behind them. *Why it mattered for the course:* it hands participants the design language to become teachers, not just users, of AI literacy.
